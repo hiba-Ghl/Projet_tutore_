@@ -1,0 +1,126 @@
+/* Centrer le formulaire sur la page */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+  }
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Largeur du formulaire */
+  }
+  
+  /* Espacement entre les champs */
+  label {
+    margin-top: 10px;
+    margin-left: 12px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="tel"],
+  input[type="password"],
+  button {
+    width: 90%;
+    padding: 10px;
+    margin: 12px 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  /* Boutons */
+  button {
+    padding: 10px 20px ; /* Réduction de la taille des boutons */
+    font-size: 14px; /* Réduire la taille du texte */
+    margin-top: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Affichage des erreurs de validation */
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  button.annuler {
+    background-color: white;   /* Fond blanc */
+    color: blue;               /* Texte en bleu */
+    border: 1px solid blue;    /* Bordure bleue */
+    padding: 10px 20px;        /* Espacement intérieur */
+    border-radius: 4px;        /* Coins arrondis */
+    cursor: pointer;           /* Curseur pointeur */
+    font-size: 14px;            /* Taille de la police */
+  }
+  
+  button.annuler:hover {
+    background-color: #f0f0f0; /* Fond gris clair au survol */
+    color: #007bff;            /* Texte bleu foncé au survol */
+    border-color: #007bff;     /* Bordure bleu foncé au survol */
+  }
+
+
+  /* Styliser le menu déroulant */
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Style pour les champs invalides */
+  input.ng-invalid.ng-touched {
+    border-color: red;
+  }
+  
+/* Style des messages d'erreur */
+div.error-message {
+    color: red;  /* Texte en rouge */
+    font-size: 15px;
+    margin-top: 4px;
+  }
+  
+  
+/* Message permanent de validation */
+.password-requirements {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.password-requirements ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.password-requirements li {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.password-requirements li.invalid {
+  margin-left: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  color: red;
+}
+
+.password-requirements li.valid {
+  color: green;
+}
