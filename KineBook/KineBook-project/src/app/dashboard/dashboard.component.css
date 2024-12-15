@@ -1,9 +1,11 @@
 #scrollableContainer {
   height: 1000px; /* Hauteur fixe pour le conteneur */
   overflow-y: auto; /* Activer le scroll vertical */
+  border: 1px solid #2bb0b0; /* Bordure pour visualiser le conteneur */
+
 }
 .container{
-  margin-top: 5%;
+  margin-top: 2%;
 }
 a {
   text-decoration: none;
@@ -11,4 +13,32 @@ a {
 .bg-blue-500
 {
   background-color: #2bb0b0;
+}
+.card{
+   width: 100%;
+   border: 2px solid #2bb0b0;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.modal-content {
+  border-radius: 8px;
+  border: 2px solid #2bb0b0;
+}
+
+.modal-title {
+  color: #2bb0b0;
+  font-weight: bold;
+}
+
+.modal-body img {
+  border: 2px solid #2bb0b0;
+}
+
+.modal-footer .btn {
+  margin-right: 10px;
+}
+
+.modal-footer .btn-primary {
+  background-color: #2bb0b0;
+  border-color: #2bb0b0;
 }
