@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-kine-sign-up',
-  imports: [ReactiveFormsModule, CommonModule],
+  // imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './kine-sign-up.component.html',
   styleUrls: ['./kine-sign-up.component.css'],
 })
@@ -37,14 +37,14 @@ export class KineSignUpComponent {
     // Étape 2 : Identification
     this.formStep2 = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, 
+      password: ['', [Validators.required,
         Validators.pattern(/^(?=.*[A-Z])(?=.*\d{4,})(?=.*[!@#$%^&*(),.?":{}|<>]).{8,}$/)
       ]], // Mot de passe avec majuscule, chiffres, symboles
       confirmPassword: ['', Validators.required]
     }, {
       validators: this.passwordsMatchValidator
     });
-    
+
     this.formStep3 = this.fb.group({
       username: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(20)]],
     });
