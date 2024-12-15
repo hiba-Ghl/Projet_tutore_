@@ -1,0 +1,67 @@
+/* Style de la barre latérale */
+.sidebar {
+  background-color: #2bb0b0 !important; /* Nouvelle couleur */
+  height: 100vh; /* Hauteur pleine */
+  padding: 15px; /* Espacement interne */
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1); /* Ombre pour la barre latérale */
+}
+
+.sidebar .nav-link {
+  color: #ffffff; /* Texte des liens en blanc */
+}
+
+.sidebar .nav-link:hover {
+  color: #f8f9fa; /* Texte légèrement plus clair au survol */
+  background-color: rgba(255, 255, 255, 0.1); /* Fond au survol */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+.sidebar i {
+  margin-right: 8px; /* Espacement entre l'icône et le texte */
+  font-size: 1.3rem; /* Augmentation de la taille des icônes */
+  transition: transform 0.2s ease; /* Animation de survol */
+}
+
+.sidebar .nav-link:hover i {
+  transform: scale(1.1); /* Agrandir l'icône au survol */
+}
+
+/* Grille des offres */
+.offer-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre plus large et douce */
+  transition: box-shadow 0.3s ease; /* Transition douce */
+}
+
+.offer-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+
+.profile img {
+  border: 2px solid #ccc;
+  border-radius: 50%; /* Rendre l'image circulaire */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile img:hover {
+  transform: scale(1.1); /* Zoom au survol */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce au survol */
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+  .offer-card {
+    margin-bottom: 15px; /* Espacement entre les cartes sur petits écrans */
+  }
+}
+
+/* Amélioration des boutons */
+.offer-card .btn-success {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.offer-card .btn-success:hover {
+  background-color: #28a745; /* Fond au survol plus marqué */
+}

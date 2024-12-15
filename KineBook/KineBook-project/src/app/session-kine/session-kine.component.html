@@ -1,1 +1,72 @@
-<p>session-kine works!</p>
+<div class="container-fluid">
+  <!-- Barre de navigation latérale -->
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block sidebar bg-dark">
+      <div class="position-sticky">
+        <ul class="nav flex-column text-white">
+          <li class="nav-item py-2">
+            <a class="nav-link text-white" href="#">
+              <i class="bi bi-house-door"></i> <!-- Icône Home -->
+              Accueil
+            </a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-white" href="#">
+              <i class="bi bi-people"></i> <!-- Icône Utilisateurs -->
+              Mes offres
+            </a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-white" href="#">
+              <i class="bi bi-calendar"></i> <!-- Icône Calendrier -->
+              les resèrvations des patients
+            </a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-white" href="#">
+              <i class="bi bi-file-earmark-text"></i> <!-- Icône Documents -->
+              Offres
+            </a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-white" href="#">
+              <i class="fa fa-power-off"></i>
+              Déconnexion
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Section principale pour les offres -->
+    <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">KineBook</h1>
+        <div class="profile d-flex align-items-center">
+          <span class="me-2">Dr.Sami</span>
+          <img src="assets/profile.jpg" class="rounded-circle" width="40" height="40" alt="Profil">
+        </div>
+      </div>
+
+      <!-- Grille pour les offres -->
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="offer-card p-4 border border-secondary rounded bg-light">
+            <h3>Offre de Massage Thérapeutique</h3>
+            <p>Durée : 30 minutes</p>
+            <p>Prix : 200 DH</p>
+            <button class="btn btn-primary">Publier</button>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="offer-card p-4 border border-secondary rounded bg-light">
+            <h3>Cupping Thérapie Detox</h3>
+            <p>Durée : 40 minutes</p>
+            <p>Prix : 350 DH</p>
+            <button class="btn btn-primary">Publier</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

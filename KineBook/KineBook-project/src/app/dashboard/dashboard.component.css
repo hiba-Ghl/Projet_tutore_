@@ -5,7 +5,7 @@
 
 }
 .container{
-  margin-top: 2%;
+  margin-top: 5%;
 }
 a {
   text-decoration: none;
@@ -15,30 +15,7 @@ a {
   background-color: #2bb0b0;
 }
 .card{
-   width: 100%;
-   border: 2px solid #2bb0b0;
+  border: 2px solid #2bb0b0;
    border-radius: 8px;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.modal-content {
-  border-radius: 8px;
-  border: 2px solid #2bb0b0;
-}
-
-.modal-title {
-  color: #2bb0b0;
-  font-weight: bold;
-}
-
-.modal-body img {
-  border: 2px solid #2bb0b0;
-}
-
-.modal-footer .btn {
-  margin-right: 10px;
-}
-
-.modal-footer .btn-primary {
-  background-color: #2bb0b0;
-  border-color: #2bb0b0;
 }
