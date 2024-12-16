@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+
 
 @Component({
   selector: 'app-session-kine',
   standalone: true,
-  imports: [],
+  imports: [],  // Ajouter CommonModule ici
   templateUrl: './session-kine.component.html',
-  styleUrl: './session-kine.component.css'
+  styleUrls: ['./session-kine.component.css']
 })
-export class SessionKineComponent {
+export class SessionKineComponent{
 
 }

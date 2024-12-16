@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { DonneurFormComponent } from './donneur-form/donneur-form.component';  // Assurez-vous d'importer le bon composant
+import { DonneurFormComponent } from './donneur-form/donneur-form.component';
 import { KineSignUpComponent } from './kine-sign-up/kine-sign-up.component';
 import { SessionKineComponent } from './session-kine/session-kine.component';
 
