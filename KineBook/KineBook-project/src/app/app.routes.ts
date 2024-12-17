@@ -6,6 +6,10 @@ import { SidebarKineComponent } from './sidebar-kine/sidebar-kine.component';
 import { SessionKineComponent } from './session-kine/session-kine.component';
 import { OffreKineComponent } from './offre-kine/offre-kine.component';
 import { CartesOffresComponent } from './cartes-offres/cartes-offres.component';
+import { InscriptionComponent } from './inscription/inscription.component';
+import { InscriptionPatientComponent } from './inscription-patient/inscription-patient.component';
+import { InscriptionDonneurComponent } from './inscription-donneur/inscription-donneur.component';
+import { InscriptionKineComponent } from './inscription-kine/inscription-kine.component';
 
 export const routes: Routes = [{path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -15,4 +19,8 @@ export const routes: Routes = [{path: 'dashboard', component: DashboardComponent
   { path: 'session-Kine', component: SessionKineComponent},
   { path: 'offre', component: OffreKineComponent},
   { path: 'carte-offre', component: CartesOffresComponent},
+  { path: 'inscription',component:InscriptionComponent },
+  { path: 'inscription-patient',component:InscriptionPatientComponent},
+  { path: 'inscription-donneur',component:InscriptionDonneurComponent},
+  { path: 'inscription-kine',component:InscriptionKineComponent},
 ];
