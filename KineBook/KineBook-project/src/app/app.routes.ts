@@ -7,41 +7,21 @@ import { SidebarKineComponent } from './sidebar-kine/sidebar-kine.component';
 import { SessionKineComponent } from './session-kine/session-kine.component';
 import { OffreKineComponent } from './offre-kine/offre-kine.component';
 import { CartesOffresComponent } from './cartes-offres/cartes-offres.component';
-<<<<<<< HEAD
-import { InscriptionComponent } from './inscription/inscription.component';
-import { InscriptionPatientComponent } from './inscription-patient/inscription-patient.component';
-import { InscriptionDonneurComponent } from './inscription-donneur/inscription-donneur.component';
-import { InscriptionKineComponent } from './inscription-kine/inscription-kine.component';
-=======
 import { AjoutOffreComponent } from './ajout-offre/ajout-offre.component';
 import { MesReservationPageComponent } from './mes-reservation-page/mes-reservation-page.component';
 import { FAQPageComponent } from './faq-page/faq-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 
-export const routes: Routes = [{path: 'dashboard', component: DashboardComponent },//-
-  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },//-
-  { path: 'navbar', component: NavbarComponent},//-
-  { path: 'don-form', component: DonneurFormComponent },//-
-  { path: 'sign-up', component: KineSignUpComponent},//-
-  { path: 'sidebar', component: SidebarKineComponent},//-
-  { path: 'session-Kine', component: SessionKineComponent},//-
-  { path: 'offre', component: OffreKineComponent},//-
-  { path: 'carte-offre', component: CartesOffresComponent},//-
-<<<<<<< HEAD//-
-  { path: 'inscription',component:InscriptionComponent },//-
-  { path: 'inscription-patient',component:InscriptionPatientComponent},//-
-  { path: 'inscription-donneur',component:InscriptionDonneurComponent},//-
-  { path: 'inscription-kine',component:InscriptionKineComponent},//-
-=======//-
-  { path: 'ajouter-offre', component:AjoutOffreComponent},//-
-  { path: 'reservation-offre', component: MesReservationPageComponent},//-
-  { path: 'FAQ', component:FAQPageComponent}//-
-];//-
-// Remove the merge conflict marker//+
-// import { InscriptionComponent } from './inscription/inscription.component';//+
-// import { InscriptionPatientComponent } from './inscription-patient/inscription-patient.component';//+
-// import { InscriptionDonneurComponent } from './inscription-donneur/inscription-donneur.component';//+
-// import { InscriptionKineComponent } from './inscription-kine/inscription-kine.component';//+
-//+
-// ... the rest of the component//+
->>>>>>> Tabnine >>>>>>>// {"conversationId":"d7579483-8deb-4a3f-b4b2-17502bbc235c","source":"instruct"}
+export const routes: Routes = [{path: 'dashboard', component: DashboardComponent },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: 'navbar', component: NavbarComponent},
+  { path: 'don-form', component: DonneurFormComponent },
+  { path: 'sign-up', component: KineSignUpComponent},
+  { path: 'sidebar', component: SidebarKineComponent},
+  { path: 'session-Kine', component: SessionKineComponent},
+  { path: 'offre', component: OffreKineComponent},
+  { path: 'carte-offre', component: CartesOffresComponent},
+  { path: 'ajouter-offre', component:AjoutOffreComponent},
+  { path: 'reservation-offre', component: MesReservationPageComponent},
+  { path: 'FAQ', component:FAQPageComponent}
+];
