@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(229, 241, 250);
+    margin: 0; /* Remove default margins */
+    height: 100vh; /* Full viewport height */
+    }
+
+fieldset {
+    display: block;
+    border-radius: 8px;
+   
+    /*margin-left: 2px;
+    margin-right: 2px;
+    padding: 0.35em 0.75em 0.625em 0.75em;*/
+   
+  }
+  legend {
+    background-color: rgb(12, 86, 170);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    width:100%;
+    font-size:20px;
+  }
+  input {
+    margin: 5px;
+    margin-left:35px;
+  }
+.button{
+    background-color: rgb(12, 86, 170);
+    color:white;
+    padding:6px;
+    border-radius: 4px;
+    margin-left:20px;
+    
+  }
+  form{
+    margin-top:20px;
+    border: 1px solid rgb(185, 164, 164); /* Correct border syntax */
+    margin-right:auto;
+    margin-left:auto;
+    width:60%;
+    min-height:260px;
+    background-color: white;
+    max-height:400px;
+
+    border-radius: 8px;
+    /*padding: 1px 5px; /* Optional: Add padding for spacing */
+}
+  
+  label{
+    font-weight: 450;
+    font-size:18px;
+  }
+
+input[type="radio"]{
+    transform:scale(1.2);
+}  
