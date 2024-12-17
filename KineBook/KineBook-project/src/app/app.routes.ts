@@ -8,6 +8,7 @@ import { OffreKineComponent } from './offre-kine/offre-kine.component';
 import { CartesOffresComponent } from './cartes-offres/cartes-offres.component';
 import { AjoutOffreComponent } from './ajout-offre/ajout-offre.component';
 import { MesReservationPageComponent } from './mes-reservation-page/mes-reservation-page.component';
+import { FAQPageComponent } from './faq-page/faq-page.component';
 
 export const routes: Routes = [{path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -19,4 +20,5 @@ export const routes: Routes = [{path: 'dashboard', component: DashboardComponent
   { path: 'carte-offre', component: CartesOffresComponent},
   { path: 'ajouter-offre', component:AjoutOffreComponent},
   { path: 'reservation-offre', component: MesReservationPageComponent},
+  { path: 'FAQ', component:FAQPageComponent}
 ];

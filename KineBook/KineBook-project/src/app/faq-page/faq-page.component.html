@@ -1,0 +1,62 @@
+<nav class="bg-blue-500">
+  <div class="mx-auto max-w-9xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex shrink-0 items-center">
+          <img class="h-12 w-auto" src="assets/logo4.png" alt="Your Company">
+        </div>
+      </div>
+      <div class="absolute inset-y-0 right-0 flex items-center space-x-4 pr-2 sm:static sm:inset-auto sm:ml-4 sm:pr-0">
+        <a href="/FAQ" class="rounded-md bg-[#2bb0b0] px-3 py-2 text-sm font-medium text-white border border-white" aria-current="page">FAQ</a>
+        <a href="/don-form" class="rounded-md bg-[#2bb0b0] px-3 py-2 text-sm font-medium text-white border border-white" aria-current="page">Contact</a>
+        <a href="/don-form" class="rounded-md bg-[#2bb0b0] px-3 py-2 text-sm font-medium text-white border border-white" aria-current="page">Sign Up</a>
+        <a href="/don-form" class="rounded-md bg-[#2bb0b0] px-3 py-2 text-sm font-medium text-white border border-white" aria-current="page">Sign In</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+
+
+<!-- FAQ page  -->
+<div class="container">
+  <div class="col-lg-90">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-10" style="background-color: #2bb0b0; padding:10px 40px 50px 10px">
+        <h2 id="qst" style="color: #000000;"> <i style="font-size: 75px;" class="fa fa-hand-point-right"></i>
+          Quelles sont les fonctionnalités principales de l'application ?</h2>
+          <h5 id="rep" style="color: #fff;margin-left: 20%;">
+            -Publication et gestion d'offres de séances pour kinésithérapeutes <br>
+            -Réservation de séances pour les patients <br>
+            -Gestion des commissions pour chaque réservation <br>
+            -Possibilité de proposer ou de recevoir des dons de matériel médical
+          </h5>
+      </div>
+  </div>
+  <div class="col-lg-70" style="margin-top: 45px">
+      <div class="col-md-2"></div>
+      <div class="col-md-10 d10" style="background-color: #85c5c5; padding:10px 50px 80px 50px">
+          <h3>QUESTIONS FRÉQUENTES</h3>
+
+        <!-- Liste des questions -->
+  <div *ngFor="let item of faq" style="margin-bottom: 10px;">
+    <!-- Question -->
+    <i class="fa-solid fa-star"></i>
+    <a
+      class="tat question"
+      href="#"
+      (click)="toggleResponse(item); $event.preventDefault();"
+      style="cursor: pointer;color: #000;"
+    >
+      {{ item.question }}
+    </a>
+
+    <!-- Réponse (affichée uniquement si isVisible est true) -->
+    <div *ngIf="item.isVisible" class="val response" style="margin-left: 20px; color: #fff;">
+      {{ item.response }}
+    </div>
+  </div>
+</div>
+
