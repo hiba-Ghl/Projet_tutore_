@@ -5,6 +5,7 @@ import { KineSignUpComponent } from './kine-sign-up/kine-sign-up.component';
 import { SidebarKineComponent } from './sidebar-kine/sidebar-kine.component';
 import { SessionKineComponent } from './session-kine/session-kine.component';
 import { OffreKineComponent } from './offre-kine/offre-kine.component';
+import { CartesOffresComponent } from './cartes-offres/cartes-offres.component';
 
 export const routes: Routes = [{path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -12,5 +13,6 @@ export const routes: Routes = [{path: 'dashboard', component: DashboardComponent
   { path: 'sign-up', component: KineSignUpComponent},
   { path: 'sidebar', component: SidebarKineComponent},
   { path: 'session-Kine', component: SessionKineComponent},
-  { path: 'offre', component: OffreKineComponent}
+  { path: 'offre', component: OffreKineComponent},
+  { path: 'carte-offre', component: CartesOffresComponent},
 ];
