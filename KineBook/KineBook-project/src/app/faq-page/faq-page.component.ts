@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { DashboardComponent } from "../dashboard/dashboard.component";
 import { CommonModule } from '@angular/common';
+import { NavbarComponent } from "../navbar/navbar.component";
 
 
 @Component({
   selector: 'app-faq-page',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NavbarComponent],
   templateUrl: './faq-page.component.html',
   styleUrl: './faq-page.component.css'
 })
@@ -45,7 +45,7 @@ export class FAQPageComponent {
   },
   {
     question: "Comment contacter le support en cas de problème ?",
-    response: "Vous pouvez nous contacter via notre formulaire de support ou par email à KineBook &#64; gmail.com..",
+    response: "Vous pouvez nous contacter via notre formulaire de support ou par email à KineBook@gmail.com.",
     isVisible: false
   }
 ];
