@@ -12,10 +12,10 @@ body{
     margin-bottom:10px;
     color:white;
     width:100%;
-}  */  
-  
+}  */
+
 legend {
-    background-color: #0c56aa;
+    background-color: #2bb0b0;
     color: white;
     padding: 6px 25px;
     border:0.5px solid grey;
@@ -48,7 +48,7 @@ label{
     margin-left:15px;
 }
 button{
-    background-color: rgb(12, 86, 170);
+    background-color: #2bb0b0;
     color:white;
     padding:8px;
     border:1px solid white;
