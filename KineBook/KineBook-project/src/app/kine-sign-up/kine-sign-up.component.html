@@ -2,22 +2,22 @@
     <!-- Étape 1 : Informations personnelles -->
     <div *ngIf="step === 1">
     <h2>Inscription Kinésithérapeute</h2>
-          <form [formGroup]="formStep1" (ngSubmit)="goToStep2()">
-            
+          <!-- <form [formGroup]="formStep1" (ngSubmit)="goToStep2()"> -->
+<form>
             <!-- Champ : Nom -->
             <label for="nom">Nom :</label>
             <input type="text" id="nom" formControlName="nom" placeholder="Entrez votre nom" required oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.slice(1)"/>
             <div *ngIf="formStep1.get('nom')?.invalid && formStep1.get('nom')?.touched" class="error-message">
               Le nom est requis.
             </div>
-            
+
             <!-- Champ : Prenom -->
             <label for="prenom">Prénom :</label>
             <input type="text" id="prenom" formControlName="prenom" placeholder="Entrez votre prénom" required oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.slice(1)"/>
             <div *ngIf="formStep1.get('prenom')?.invalid && formStep1.get('prenom')?.touched" class="error-message">
               Le prénom est requis.
             </div>
-            
+
             <!-- Champ : Adresse -->
             <label for="adresse">Adresse :</label>
             <input type="text" id="adresse" formControlName="adresse" placeholder="Entrez votre adresse" required oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.slice(1)"/>
@@ -35,7 +35,7 @@
 
             <!-- Champ : CIN -->
             <label for="cin">CIN :</label>
-            <input type="text" id="cin" formControlName="cin" placeholder="Entrez votre CIN" required oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.slice(1)"/>      
+            <input type="text" id="cin" formControlName="cin" placeholder="Entrez votre CIN" required oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.slice(1)"/>
             <div *ngIf="formStep1.get('cin')?.invalid && formStep1.get('cin')?.touched" class="error-message">
               CIN est requise.
               </div>
@@ -46,8 +46,8 @@
             <div *ngIf="formStep1.get('telephone')?.invalid && formStep1.get('telephone')?.touched" class="error-message">
               Le téléphone est requis.
             </div>
-            
-            
+
+
             <label for="diplomes">Diplômes :</label>
             <input type="file" id="diplomes" multiple (change)="onFileSelected($event, 'diplomes')" required />
             <div *ngIf="diplomes.length > 0">
@@ -58,7 +58,7 @@
                 </li>
               </ul>
             </div>
-      
+
             <label for="certificats">Certificats :</label>
             <input type="file" id="certificats" multiple (change)="onFileSelected($event, 'certificats')" required />
             <div *ngIf="certificats.length > 0">
@@ -69,20 +69,21 @@
                 </li>
               </ul>
             </div>
-      
+
             <button type="submit" [disabled]="formStep1.invalid">Suivant</button>
               <!-- Bouton Annuler -->
           <button type="button" (click)="resetStep1()" class="cancel-button">Annuler</button>
           </form>
         </div>
-      
+
         <!-- Étape 2 : Identification -->
         <div *ngIf="step === 2">
           <h2>Étape 2 : Identification</h2>
-          <form [formGroup]="formStep2" (ngSubmit)="goToStep3()">
+          <!-- <form [formGroup]="formStep2" (ngSubmit)="goToStep3()"> -->
+            <form>
             <label for="email">Email :</label>
             <input type="email" id="email" formControlName="email" placeholder="Entrez votre email" required />
-      
+
             <label for="password">Mot de passe :</label>
         <div>
           <input
@@ -92,7 +93,8 @@
             required
             (input)="onPasswordInput()"
           >
-          <div class="password-requirements" [ngClass]="{'invalid': !isPasswordValid(), 'valid': isPasswordValid()}">
+          <!-- <div class="password-requirements" [ngClass]="{'invalid': !isPasswordValid(), 'valid': isPasswordValid()}"> -->
+            <div>
             <ul>
               <li [class.invalid]="!isUppercase">1 Lettre majuscule</li>
               <li [class.invalid]="!isNumber">4 Chiffres</li>
@@ -104,7 +106,7 @@
             {{ passwordVisible ? 'Masquer' : 'Afficher' }}
           </button>
         </div>
-      
+
         <!-- Champ : Confirmer le mot de passe -->
         <label for="confirmPassword">Confirmer le mot de passe :</label>
         <input
@@ -124,7 +126,8 @@
           </form>
         </div>
         <div *ngIf="step === 3">
-          <form [formGroup]="formStep3">
+          <!-- <form [formGroup]="formStep3"> -->
+            <form>
             <label for="username">Nom d'utilisateur</label>
             <input id="username" formControlName="username" placeholder="Entrez un nom d'utilisateur" />
             <ul>
@@ -141,4 +144,3 @@
           </form>
         </div>
       </div>
-      
