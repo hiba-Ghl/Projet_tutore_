@@ -16,6 +16,7 @@ import { InscriptionPatientComponent } from './inscription-patient/inscription-p
 import { InscriptionDonneurComponent } from './inscription-donneur/inscription-donneur.component';
 import { InscriptionKineComponent } from './inscription-kine/inscription-kine.component';
 import { ShowReservationComponent } from './show-reservation/show-reservation.component';
+import { EditProfilKineComponent } from './edit-profil-kine/edit-profil-kine.component';
 
 export const routes: Routes = [{path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -35,4 +36,5 @@ export const routes: Routes = [{path: 'dashboard', component: DashboardComponent
   { path: 'inscription-donneur',component:InscriptionDonneurComponent},
   { path: 'inscription-kine',component:InscriptionKineComponent},
   { path: 'reservation-patient',component:ShowReservationComponent},
+  { path: 'profil-kine',component:EditProfilKineComponent},
 ];
