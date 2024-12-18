@@ -1,0 +1,32 @@
+.bg-blue-500
+{
+  background-color: #2bb0b0;
+}
+
+a{
+ text-decoration: none;
+}
+.question {
+  font-size: 20px;
+  color: #2bb0b0;
+  text-decoration: underline;
+}
+
+.response {
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.question:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  color: #fffafa;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 35px;
+}
+

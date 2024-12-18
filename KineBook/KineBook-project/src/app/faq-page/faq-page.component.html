@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+<br>
+<br>
+<!-- FAQ page  -->
+<div class="container">
+  <div class="col-lg-90">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-10" style="background-color: #2bb0b0; padding:10px 40px 50px 10px">
+        <h2 id="qst" style="color: #000000;"> <i style="font-size: 75px;" class="fa fa-hand-point-right"></i>
+          Quelles sont les fonctionnalités principales de l'application ?</h2>
+          <h5 id="rep" style="color: #fff;margin-left: 20%;">
+            -Publication et gestion d'offres de séances pour kinésithérapeutes <br>
+            -Réservation de séances pour les patients <br>
+            -Gestion des commissions pour chaque réservation <br>
+            -Possibilité de proposer ou de recevoir des dons de matériel médical
+          </h5>
+      </div>
+  </div>
+  <div class="col-lg-70" style="margin-top: 45px">
+      <div class="col-md-2"></div>
+      <div class="col-md-10 d10" style="background-color: #85c5c5; padding:10px 50px 80px 50px">
+          <h3>QUESTIONS FRÉQUENTES</h3>
+
+        <!-- Liste des questions -->
+  <div *ngFor="let item of faq" style="margin-bottom: 10px;">
+    <!-- Question -->
+    <i class="fa-solid fa-star"></i>
+    <a
+      class="tat question"
+      href="#"
+      (click)="toggleResponse(item); $event.preventDefault();"
+      style="cursor: pointer;color: #000;"
+    >
+      {{ item.question }}
+    </a>
+
+    <!-- Réponse (affichée uniquement si isVisible est true) -->
+    <div *ngIf="item.isVisible" class="val response" style="margin-left: 20px; color: #fff;">
+      {{ item.response }}
+    </div>
+  </div>
+</div>
+

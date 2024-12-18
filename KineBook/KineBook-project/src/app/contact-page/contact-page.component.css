@@ -1,0 +1,36 @@
+.bg-blue-500
+{
+  background-color: #2bb0b0;
+}
+
+a{
+ text-decoration: none;
+}
+h1{
+  margin-bottom: 40px;
+  }
+  label {
+  color: #333;
+  }
+  .form-control {
+  margin-bottom: 20px;
+  }
+  .btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  }
+  p{
+    font-size: 13px !important;
+    margin-bottom: 5px !important;
+    text-align: center;
+  }
+  form{
+    border: 1px solid #2bb0b0;
+    padding: 5%;
+  }
+  #obl{
+    color: red
+  }
+
