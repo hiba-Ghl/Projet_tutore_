@@ -50,6 +50,7 @@ export const routes: Routes = [{path: 'dashboard', component: DashboardComponent
   { path: 'reservation-patient',component:ShowReservationComponent},
   { path: 'profil-kine',component:EditProfilKineComponent},
   { path:'sign-in',component:SignInComponent},
+  { path:'FAQ',component:FAQPageComponent},
   { path:'dashboard-admin',component:DashboardAdminComponent},
   
 ];

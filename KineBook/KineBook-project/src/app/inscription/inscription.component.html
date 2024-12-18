@@ -1,23 +1,24 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Inscription</title>
-    </head>
-    <body>
-      <app-navbar></app-navbar>
+<app-navbar></app-navbar>
 
-<form  >
-<fieldset>
-    <legend>Veuillez préciser le statut auquel vous appartenez:</legend>
+<form>
+  <fieldset>
+    <legend>Veuillez préciser le statut auquel vous appartenez :</legend>
 
-   <input id="patient" type="radio" name="user" value="patient">
-   <label for="patient">patient</label> <br><br>
-   <input id="donneur" type="radio" name="user" value="donneur">
-   <label for="donneur">donneur</label> <br><br>
-   <input id="kine" type="radio" name="user" value="kine">
-   <label for="kine">kinésithérapeute</label> <br><br>
-  <a href="/inscription-patient" class="button"> suivant</a>
-</fieldset>
+    <!-- Liste déroulante -->
+    <label for="user-type">Statut :</label>
+    <select id="user-type" [(ngModel)]="userType">
+      <option value="" selected disabled>--Sélectionnez--</option>
+      <option value="patient">Patient</option>
+      <option value="donneur">Donneur</option>
+      <option value="kine">Kinésithérapeute</option>
+    </select>
+
+    <!-- Message d'erreur si aucun statut n'est sélectionné -->
+    <div *ngIf="!userType && userType !== ''" class="error-message">
+      <small style="color: red;">Veuillez sélectionner un statut.</small>
+    </div>
+  </fieldset>
+
+  <!-- Bouton pour soumettre le formulaire -->
+  <button type="button" (click)="navigateToNext()">Suivant</button>
 </form>
-</body>
-</html>

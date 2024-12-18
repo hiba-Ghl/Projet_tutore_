@@ -1,41 +1,45 @@
-<div class="container">
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="profile">
-        
-        <img [src]=" user.photoUrl " alt="Photo de profil" class="profile-photo">
-        <span class="username">{{ user.username }}</span>
+<div class="container-fluid">
+  <!-- Barre de navigation latérale -->
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block sidebar bg-dark">
+      <div class="position-sticky">
+        <ul class="nav flex-column text-white">
+          <li class="nav-item py-2">
+            <a class="nav-link text-white" href="/session-Kine">
+              <i class="fa-solid fa-house"></i> Accueil
+            </a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-white" href="/offre">
+              <i class="fa-solid fa-list"></i> Mes offres
+            </a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-white" href="/reservation-patient">
+              <i class="fa-solid fa-hospital-user"></i>Resèrvations des patients
+            </a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-white" href="/profil-kine">
+              <i class="fa-regular fa-id-card"></i> profil
+            </a>
+          </li>
+          <li class="nav-item py-2">
+            <a class="nav-link text-white" href="#">
+              <i class="fa fa-power-off"></i>
+              Déconnexion
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="sidebar-menu">
-        <li><a href="#"><i class="fa fa-home"></i> Accueil</a></li>
-        <li><a href="#"><i class="fa fa-envelope"></i> Kinésithérapeutes</a></li>
-        <li><a href="#"><i class="fa fa-question-circle"></i> Wallet</a></li>
-        <li><a href="#"><i class="fa fa-info-circle"></i> Profile</a></li>
-        <li><a href="#"><i class="fa fa-sign-out"></i> Déconnexion</a></li>
-      </ul>
-    </div>
-  
-    <!-- Table Section -->
-    <div class="reservation-table">
-      <h2 class="reservations-title">Mes Réservations</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Numéro d'offre</th>
-            <th>Nom du Kiné</th>
-            <th>Contact</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let reservation of reservations; let i = index">
-            <td>{{ i + 1 }}</td>
-            <td>{{ reservation.kineName }}</td>
-            <td>{{ reservation.kineContact }}</td>
-            <td>{{ reservation.status }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  
+    </nav>
+
+      <!-- Section principale pour les offres -->
+      <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2"  style="font-weight: bold; color: #2bb0b0; font-size: xx-large;">Ajouter <strong id="cat">une Offre </strong></h1>
+          <div class="profile d-flex align-items-center">
+            <span class="me-2" style="font-weight: bold">Dr.Sami</span>
+            <img src="assets/profile.jpg" class="rounded-circle" width="40" height="40" alt="Profil">
+          </div>
+        </div>
