@@ -22,6 +22,7 @@ import { InscriptionKineComponent } from './inscription-kine/inscription-kine.co
 import { ShowReservationComponent } from './show-reservation/show-reservation.component';
 import { EditProfilKineComponent } from './edit-profil-kine/edit-profil-kine.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 
 
 export const routes: Routes = [{path: 'dashboard', component: DashboardComponent },
@@ -47,6 +48,10 @@ export const routes: Routes = [{path: 'dashboard', component: DashboardComponent
   { path: 'inscription-donneur',component:InscriptionDonneurComponent},
   { path: 'inscription-kine',component:InscriptionKineComponent},
   { path: 'reservation-patient',component:ShowReservationComponent},
+  { path: 'profil-kine',component:EditProfilKineComponent},
+  { path:'sign-in',component:SignInComponent},
+  { path:'dashboard-admin',component:DashboardAdminComponent},
+  
   { path: 'profil-kine',component:EditProfilKineComponent},
   { path: 'sign-in',component:SignInComponent},
 ];
