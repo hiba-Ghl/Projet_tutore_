@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-user-sign-up',
+  standalone: true,
   imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './user-sign-up.component.html',
   styleUrl: './user-sign-up.component.css'

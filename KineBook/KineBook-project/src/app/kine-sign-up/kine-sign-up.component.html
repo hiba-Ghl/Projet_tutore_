@@ -1,9 +1,8 @@
-<div class="container">
+<div class="container form-container">
     <!-- Étape 1 : Informations personnelles -->
     <div *ngIf="step === 1">
     <h2>Inscription Kinésithérapeute</h2>
-          <!-- <form [formGroup]="formStep1" (ngSubmit)="goToStep2()"> -->
-<form>
+          <form [formGroup]="formStep1" (ngSubmit)="goToStep2()">
             <!-- Champ : Nom -->
             <label for="nom">Nom :</label>
             <input type="text" id="nom" formControlName="nom" placeholder="Entrez votre nom" required oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.slice(1)"/>
@@ -75,9 +74,8 @@
           <button type="button" (click)="resetStep1()" class="cancel-button">Annuler</button>
           </form>
         </div>
-
         <!-- Étape 2 : Identification -->
-        <div *ngIf="step === 2">
+        <div *ngIf="step === 2" class="container form-container">
           <h2>Étape 2 : Identification</h2>
           <!-- <form [formGroup]="formStep2" (ngSubmit)="goToStep3()"> -->
             <form>

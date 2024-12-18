@@ -1,9 +1,8 @@
 <div class="container">
-    
     <!-- Étape 1 : Informations personnelles -->
     <div *ngIf="step === 1">
+      <h2>Informations personnelles</h2>
        <form [formGroup]="formStep1" (ngSubmit)="goToStep2()">
-         <h2>Étape 1 : Informations personnelles</h2>
          <!-- Champ : Nom -->
          <label for="nom">Nom :</label>
          <input type="text" id="nom" formControlName="nom" placeholder="Entrez votre nom" required oninput="this.value = this.value.charAt(0).toUpperCase() + this.value.slice(1)">
