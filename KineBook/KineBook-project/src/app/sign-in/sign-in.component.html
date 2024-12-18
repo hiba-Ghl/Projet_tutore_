@@ -5,7 +5,7 @@
       <div class="form-group">
         <label for="email">Email</label>
         <input id="email" formControlName="email" type="email" required />
-        <div *ngIf="signInForm.controls.email.invalid && signInForm.controls.email.touched" class="error">
+        <div *ngIf="signInForm.controls['email'].invalid && signInForm.controls['email'].touched" class="error">
           Veuillez entrer une adresse email valide.
         </div>
       </div>
@@ -14,7 +14,7 @@
       <div class="form-group">
         <label for="password">Mot de passe</label>
         <input id="password" formControlName="password" type="password" required />
-        <div *ngIf="signInForm.controls.password.invalid && signInForm.controls.password.touched" class="error">
+        <div *ngIf="signInForm.controls['password'].invalid && signInForm.controls['password'].touched" class="error">
           Le mot de passe est obligatoire.
         </div>
       </div>
@@ -23,4 +23,3 @@
       <button type="submit" [disabled]="signInForm.invalid">Se connecter</button>
     </form>
   </div>
-  

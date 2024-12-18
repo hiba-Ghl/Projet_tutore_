@@ -7,10 +7,10 @@ import { SessionKineComponent } from './session-kine/session-kine.component';
 import { OffreKineComponent } from './offre-kine/offre-kine.component';
 import { CartesOffresComponent } from './cartes-offres/cartes-offres.component';
 
-import { MesReservationPageComponent } from '../app/mes-reservation-page/mes-reservation-page.component';
-import { OffreFormComponent } from '../app/offre-form/offre-form.component';
-import { UserSignUpComponent } from '../app/user-sign-up/user-sign-up.component';
-import { KineSignUpComponent } from '../app/kine-sign-up/kine-sign-up.component';
+import { MesReservationPageComponent } from './mes-reservation-page/mes-reservation-page.component';
+import { OffreFormComponent } from './offre-form/offre-form.component';
+import { UserSignUpComponent } from './user-sign-up/user-sign-up.component';
+import { KineSignUpComponent } from './kine-sign-up/kine-sign-up.component';
 
 import { AjoutOffreComponent } from './ajout-offre/ajout-offre.component';
 import { FAQPageComponent } from './faq-page/faq-page.component';
@@ -48,4 +48,5 @@ export const routes: Routes = [{path: 'dashboard', component: DashboardComponent
   { path: 'inscription-kine',component:InscriptionKineComponent},
   { path: 'reservation-patient',component:ShowReservationComponent},
   { path: 'profil-kine',component:EditProfilKineComponent},
+  { path: 'sign-in',component:SignInComponent},
 ];
