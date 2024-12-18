@@ -15,8 +15,8 @@ export class InscriptionKineComponent {
     this.therapistForm = this.fb.group({
       // Personal Information
       name: ['', Validators.required],
-      gender: [''],
-      birthDate: [''],
+      gender: ['',Validators.required],
+      birthDate: ['',Validators.required],
 
       // Contact Information
       email: ['', [Validators.required, Validators.email]],
@@ -26,7 +26,7 @@ export class InscriptionKineComponent {
       // Professional Information
       specialty: ['', Validators.required],
       experience: ['', [Validators.min(0)]],
-      languages: [''],
+      languages: ['',Validators.required],
 
       // Account Information
       password: ['', Validators.required],
