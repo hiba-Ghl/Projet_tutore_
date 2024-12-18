@@ -1,9 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { CommonModule } from '@angular/common'; 
-
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
+import { Validator } from '@angular/forms';
 @Component({
   selector: 'app-sign-in',
   standalone: true,
