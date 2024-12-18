@@ -21,6 +21,7 @@ import { InscriptionDonneurComponent } from './inscription-donneur/inscription-d
 import { InscriptionKineComponent } from './inscription-kine/inscription-kine.component';
 import { ShowReservationComponent } from './show-reservation/show-reservation.component';
 import { EditProfilKineComponent } from './edit-profil-kine/edit-profil-kine.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 export const routes: Routes = [{path: 'dashboard', component: DashboardComponent },
@@ -40,12 +41,16 @@ export const routes: Routes = [{path: 'dashboard', component: DashboardComponent
 
   { path: 'ajouter-offre', component:AjoutOffreComponent},
   { path: 'reservation-offre', component: MesReservationPageComponent},
-  { path: 'FAQ', component:FAQPageComponent},
   { path: 'contact', component: ContactPageComponent},
   { path: 'inscription',component:InscriptionComponent },
   { path: 'inscription-patient',component:InscriptionPatientComponent},
   { path: 'inscription-donneur',component:InscriptionDonneurComponent},
   { path: 'inscription-kine',component:InscriptionKineComponent},
   { path: 'reservation-patient',component:ShowReservationComponent},
+<<<<<<< HEAD
   { path: 'profil-kine',component:EditProfilKineComponent},
+=======
+  { path: 'profil-kine',component:EditProfilKineComponent}, 
+  { path: 'sign-in',component:SignInComponent},
+>>>>>>> 0e1fe6438fbe555486752b6c584e808a08aed9b7
 ];
