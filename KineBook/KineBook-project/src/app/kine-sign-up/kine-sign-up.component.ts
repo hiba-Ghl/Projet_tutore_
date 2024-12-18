@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-kine-sign-up',
-  // imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule],
+  standalone: true,
   templateUrl: './kine-sign-up.component.html',
   styleUrls: ['./kine-sign-up.component.css'],
 })
