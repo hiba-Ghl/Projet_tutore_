@@ -1,8 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common'; 
 import { NavbarComponent } from '../navbar/navbar.component';
 
+=======
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
+import { Validator } from '@angular/forms';
+>>>>>>> ac3e98fe8614d9db2a494d4ee1a742e6b9e8502c
 @Component({
   selector: 'app-sign-in',
   standalone: true,
