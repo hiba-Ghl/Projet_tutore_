@@ -38,7 +38,7 @@ fieldset {
     border: 1px solid rgb(185, 164, 164); /* Correct border syntax */
     margin-right:auto;
     margin-left:auto;
-    width:60%;
+    width:40%;
     min-height:260px;
     background-color: white;
     max-height:400px;
