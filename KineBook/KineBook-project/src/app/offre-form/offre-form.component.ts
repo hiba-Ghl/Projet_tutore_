@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { MatDialogRef } from '@angular/material/dialog';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { MatDatepickerModule } from '@angular/material/datepicker';
+// import { MatDialogRef } from '@angular/material/dialog';
+// import { MatFormFieldModule } from '@angular/material/form-field';
+// import { MatInputModule } from '@angular/material/input';
+// import { MatDatepickerModule } from '@angular/material/datepicker';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatNativeDateModule } from '@angular/material/core';
+// import { MatNativeDateModule } from '@angular/material/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -15,16 +15,10 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './offre-form.component.html',
   styleUrls: ['./offre-form.component.css'],
   imports: [
-    MatDatepickerModule,
-    MatInputModule,
     FormsModule,
     ReactiveFormsModule,
     ReactiveFormsModule, // Module pour les formulaires réactifs
-    MatFormFieldModule, 
-    MatInputModule,
-    MatNativeDateModule,
     CommonModule,
-    MatDatepickerModule,
   ]
 })
 export class OffreFormComponent {
@@ -32,7 +26,7 @@ export class OffreFormComponent {
 
   constructor(
     private fb: FormBuilder,
-    private dialogRef: MatDialogRef<OffreFormComponent> // Pour gérer la fermeture du dialogue
+    // private dialogRef: MatDialogRef<OffreFormComponent> // Pour gérer la fermeture du dialogue
   ) {
     this.reservationForm = this.fb.group({
       firstName: ['', Validators.required], // Champ Prénom
@@ -46,7 +40,7 @@ export class OffreFormComponent {
   onSubmit() {
     if (this.reservationForm.valid) {
       console.log(this.reservationForm.value);
-      this.dialogRef.close(this.reservationForm.value); // Ferme la modale et renvoie les données
+      // this.dialogRef.close(this.reservationForm.value); // Ferme la modale et renvoie les données
     }
   }
 }

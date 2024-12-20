@@ -9,7 +9,7 @@
   </div>
 
   <!-- Formulaire de réservation -->
-  <form [formGroup]="reservationForm" (ngSubmit)="onSubmit()" class="reservation-form">
+  <!-- <form [formGroup]="reservationForm" (ngSubmit)="onSubmit()" class="reservation-form">
     <mat-form-field appearance="fill">
       <mat-label>Nom</mat-label>
       <input matInput placeholder="Nom" formControlName="name" required>
@@ -35,10 +35,10 @@
       <input matInput [matDatepicker]="picker" formControlName="reservationDate" placeholder="Choisissez une date" required>
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
-    </mat-form-field>
-
+    </mat-form-field> -->
+<!-- 
     <div class="form-actions">
       <button mat-raised-button color="primary" type="submit" [disabled]="!reservationForm.valid">Réserver</button>
     </div>
-  </form>
+  </form> -->
 </div>
