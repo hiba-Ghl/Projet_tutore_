@@ -23,6 +23,12 @@ import { ShowReservationComponent } from './show-reservation/show-reservation.co
 import { EditProfilKineComponent } from './edit-profil-kine/edit-profil-kine.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
+import { SidebarAdminComponent } from './sidebar-admin/sidebar-admin.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
+import { StatsOffreComponent } from './stats-offre/stats-offre.component';
+import { KineDemandesComponent } from './kine-demandes/kine-demandes.component';
+import { WalletPageComponent } from './wallet-page/wallet-page.component';
+import { ProfileAdminComponent } from './profile-admin/profile-admin.component';
 
 
 export const routes: Routes = [{path: 'dashboard', component: DashboardComponent },
@@ -52,6 +58,11 @@ export const routes: Routes = [{path: 'dashboard', component: DashboardComponent
   { path:'sign-in',component:SignInComponent},
   { path:'FAQ',component:FAQPageComponent},
   { path:'dashboard-admin',component:DashboardAdminComponent},
+  { path:'admin-page',component: AdminPageComponent},
+  { path:'stats-offre',component: StatsOffreComponent},
+  { path:'kine-demandes',component:KineDemandesComponent },
+  { path:'wallet-page',component: WalletPageComponent},
+  { path:'profile-admin',component: ProfileAdminComponent},
   
   { path: 'profil-kine',component:EditProfilKineComponent},
   { path: 'sign-in',component:SignInComponent},
