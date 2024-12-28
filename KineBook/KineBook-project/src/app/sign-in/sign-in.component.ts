@@ -1,36 +1,22 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { NavbarComponent } from '../navbar/navbar.component';
-// import { Validator } from '@angular/forms';
+
 @Component({
   selector: 'app-sign-in',
   standalone: true,
-  imports: [ReactiveFormsModule,CommonModule,NavbarComponent],
+  imports: [NavbarComponent, FormsModule],
   templateUrl: './sign-in.component.html',
-  styleUrl: './sign-in.component.css'
+  styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent {
+  email: string = '';
+  password: string = '';
 
-  signInForm: FormGroup;
-
-  constructor(private fb: FormBuilder) {
-    this.signInForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]], // Email with validation
-      password: ['', Validators.required]                  // Password required
-    });
-  }
-
-  onSubmit(): void {
-    if (this.signInForm.valid) {
-      console.log('Connexion réussie avec :', this.signInForm.value);
-      alert('Connexion réussie !');
-      this.signInForm.reset();
-    } else {
-      alert('Veuillez remplir tous les champs correctement.');
-    }
+  onSubmit() {
+    console.log('Form submitted');
+    console.log('Email:', this.email);
+    console.log('Password:', this.password);
+    // Add authentication logic here
   }
 }
-
-
-
