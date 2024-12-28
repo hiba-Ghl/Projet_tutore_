@@ -1,19 +1,22 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
+
 @Component({
   selector: 'app-inscription',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [NavbarComponent, FormsModule],
   templateUrl: './inscription.component.html',
   styleUrls: ['./inscription.component.css']
 })
 export class InscriptionComponent {
-  userType: string = ''; // Propriété pour stocker le statut sélectionné
+  onSubmit(){}
+  userType: string = ''; // Property to store the selected status
 
   constructor(private router: Router) {}
 
-  // Méthode pour gérer la redirection
+  // Method to handle navigation
   navigateToNext() {
     if (!this.userType) {
       alert('Veuillez sélectionner un statut avant de continuer.');
@@ -22,7 +25,7 @@ export class InscriptionComponent {
 
     switch (this.userType) {
       case 'patient':
-        this.router.navigate(['/inscription-patient']);
+        this.router.navigate(['/user-sign-up']);
         break;
       case 'donneur':
         this.router.navigate(['/inscription-donneur']);
