@@ -29,7 +29,7 @@ import { StatsOffreComponent } from './stats-offre/stats-offre.component';
 import { KineDemandesComponent } from './kine-demandes/kine-demandes.component';
 import { WalletPageComponent } from './wallet-page/wallet-page.component';
 import { ProfileAdminComponent } from './profile-admin/profile-admin.component';
-
+import { DonsMaterielComponent } from './dons-materiel/dons-materiel.component';
 
 export const routes: Routes = [{path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -57,13 +57,14 @@ export const routes: Routes = [{path: 'dashboard', component: DashboardComponent
   { path: 'profil-kine',component:EditProfilKineComponent},
   { path:'sign-in',component:SignInComponent},
   { path:'FAQ',component:FAQPageComponent},
+  { path: 'materiel',component:DonsMaterielComponent},
   { path:'dashboard-admin',component:DashboardAdminComponent},
   { path:'admin-page',component: AdminPageComponent},
   { path:'stats-offre',component: StatsOffreComponent},
   { path:'kine-demandes',component:KineDemandesComponent },
   { path:'wallet-page',component: WalletPageComponent},
   { path:'profile-admin',component: ProfileAdminComponent},
-  
+
   { path: 'profil-kine',component:EditProfilKineComponent},
   { path: 'sign-in',component:SignInComponent},
 ];
