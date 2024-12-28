@@ -1,6 +1,5 @@
 <app-navbar></app-navbar>
 <br>
-<br>
 <!-- FAQ page  -->
 <div class="container">
   <div class="col-lg-90">
@@ -17,7 +16,7 @@
           </h5>
       </div>
   </div>
-  <div class="col-lg-70" style="margin-top: 45px">
+  <div class="col-lg-70" style="margin-top: 35px">
       <div class="col-md-2"></div>
       <div class="col-md-10 d10" style="background-color: #85c5c5; padding:10px 50px 80px 50px">
           <h3>QUESTIONS FRÉQUENTES</h3>
@@ -39,6 +38,20 @@
     <div *ngIf="item.isVisible" class="val response" style="margin-left: 20px; color: #fff;">
       {{ item.response }}
     </div>
+  </div>
+  <br>
+  <h4> <i style="font-size: 20px;" class="fa fa-hand-point-right"></i>Ajouter une question</h4>
+  <div class="input-group">
+    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+      type de question <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end">
+      <li><a class="dropdown-item" href="#">question à propos de la réservation</a></li>
+      <li><a class="dropdown-item" href="#">question à propos de  les dons de matériel</a></li>
+      <li><a class="dropdown-item" href="#">question à propos de postulation des offres </a></li>
+    </ul>
+    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+    <button type="button" class="btn btn-secondary">Envoyer</button>
   </div>
 </div>
 

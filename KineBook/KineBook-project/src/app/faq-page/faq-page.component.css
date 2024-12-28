@@ -29,4 +29,6 @@ h3 {
   font-weight: bold;
   font-size: 35px;
 }
-
+.container {
+  margin-left: 15%;
+}
