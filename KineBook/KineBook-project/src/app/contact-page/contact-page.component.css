@@ -2,12 +2,18 @@
 {
   background-color: #2bb0b0;
 }
+body{
+  background-color: #edf8f8;
+}
 
 a{
  text-decoration: none;
 }
 h1{
   margin-bottom: 40px;
+  margin-left: 30%;
+  font-size: 50px;
+  text-decoration: underline;
   }
   label {
   color: #333;
@@ -29,6 +35,8 @@ h1{
   form{
     border: 1px solid #2bb0b0;
     padding: 5%;
+    margin-left: 30%;
+    background-color: white;
   }
   #obl{
     color: red
