@@ -31,6 +31,9 @@ import { KineDemandesComponent } from './kine-demandes/kine-demandes.component';
 import { WalletPageComponent } from './wallet-page/wallet-page.component';
 import { ProfileAdminComponent } from './profile-admin/profile-admin.component';
 import { DonsMaterielComponent } from './dons-materiel/dons-materiel.component';
+import { DashboardDonneurComponent } from './dashboard-donneur/dashboard-donneur.component';
+import { MesDonsComponent } from './mes-dons/mes-dons.component';
+import { AddDonationComponent } from './ajout-don/ajout-don.component';
 
 export const routes: Routes = [{path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -68,4 +71,7 @@ export const routes: Routes = [{path: 'dashboard', component: DashboardComponent
 
   { path: 'profil-kine',component:EditProfilKineComponent},
   { path: 'sign-in',component:SignInComponent},
+  { path: 'dashboard-donneur',component:DashboardDonneurComponent},
+  { path: 'mes-dons',component:MesDonsComponent},
+  { path: 'ajout-don',component:AddDonationComponent},
 ];
